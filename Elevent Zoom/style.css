@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*set a border on the images to prevent shifting*/
+#gal1 img{border:2px solid white;}
+ 
+/*Change the colour*/
+.active img{border:2px solid #333 !important;}
+.car{
+    width: 200px;
+}
+.zoomWrapper{
+    height: 480px;
+}

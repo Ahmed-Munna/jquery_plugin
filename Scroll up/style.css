@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    background-color: rgba(40, 172, 139, 0.87);
+    padding: 20px 0;
+}
+a#scrollUp {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        background: black;
+        right: 50px;
+        bottom: 50px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: .3s;
+    
+}
+
+
+i.fas.fa-angle-up.fa-2x {
+    margin-top:7px;
+}
+a#scrollUp:hover {
+    background-color: #555;
+}

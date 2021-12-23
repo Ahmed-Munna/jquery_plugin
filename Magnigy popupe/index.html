@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnific Popup</title>
+    <link rel="stylesheet" href="Magnific-Popup-master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+        <div><a class="gallary" href="img.jpeg"><img src="img.jpeg" alt=""></a></div>
+    </div>
+
+
+
+    <a class="popup-modal" href="#test-modal">Click on</a>
+
+    <div id="test-modal" class="mfp-hide white-popup-block">
+        <h1>Modal dialog</h1>
+        <p>You won't be able to dismiss this by usual means (escape or
+            click button), but you can close it programatically based on
+            user choices or actions.</p>
+        <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="Magnific-Popup-master/website/third-party-libs/jquery.min.js"></script>
+    <script src="Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script>
+$(document).ready(function() {
+
+
+    $('.gallary').magnificPopup({
+  type: 'image',
+  gallery:{enabled:true} ,
+  // other options
+
+});
+});
+
+
+$(function () {
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+});
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coundown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div id="getting-started"></div>
+
+
+
+
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="coundown.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('#getting-started').countdown('2021/07/01', function(event) {
+
+    $(this).html(event.strftime('<div class="single_count">%W<span>Weeks</span></div> <div class="single_count">%d<span>Days</span></div><div class="single_count">%H<span>Hours</span></div><div class="single_count">%M<span>Menutes</span></div><div class="single_count">%S<span>Secound</span></div>'));
+
+
+  });
+
+
+        })
+
+
+    </script>
+</body>
+</html>

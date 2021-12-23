@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixitup plugin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btn-container">
+    <button type="button" data-filter="all">All</button>
+<button type="button" data-filter=".normal">Normal</button>
+<button type="button" data-filter=".horizontal">Horizontal</button>
+<button type="button" data-filter=".vertical">vertical</button>
+<button type="button" data-filter=".big">Big</button>
+</div>
+    <div class="container">
+        <div class="mix normal"><img src="images/normal1.jpg" alt=""></div>
+        <div class="mix vertical"><img src="images/vertical1.jpg" alt=""></div>
+        <div class="mix horizontal"><img src="images/horizontal1.jpg" alt=""></div>
+        <div class="mix normal"><img src="images/normal2.jpg" alt=""></div> 
+        <div class="mix normal"><img src="images/normal3.jpg" alt=""></div>
+         <di class="mix big"v><img src="images/big1.jpg" alt=""></di> 
+        <div class="mix normal"><img src="images/normal4.jpg" alt=""></div>
+         <div class="mix vertical"><img src="images/vertical2.jpg" alt=""></div> 
+        <div class="mix normal"><img src="images/normal5.jpg" alt=""></div>
+         <div class="mix horizontal"><img src="images/horizontal2.jpg" alt=""></div> 
+        <div class="mix normal"><img src="images/normal6.jpg" alt=""></div>
+         <div class="mix big"><img src="images/big2.jpg" alt=""></div> 
+        <div class="mix normal"><img src="images/normal7.jpg" alt=""></div>
+         <div class="mix horizontal"><img src="images/horizontal3.jpg" alt=""></div> 
+        <div class="mix normal"><img src="images/normal8.jpg" alt=""></div>
+        <div class="mix big"><img src="images/big3.jpg" alt=""></div> 
+        <div class="mix horizontal"><img src="images/horizontal3.jpg" alt=""></div>
+        <div class="mix normal"><img src="images/normal9.jpg" alt=""></div>
+        <div class="mix vertical"><img src="images/vertical3.jpg" alt=""></div> 
+    </div>
+
+
+
+
+
+
+
+<script src="mixitup-3/dist/mixitup.min.js"></script>
+<script>
+    var config = document.querySelector('.container');
+    var mixer = mixitup(config);
+</script>
+
+</body>
+</html>

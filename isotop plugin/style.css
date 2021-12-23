@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+li{
+  padding: 10px 30px;
+  border: 1px solid #999;
+  margin:  50px 5px;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 10px;
+
+}
+.container img{
+  width: 200px;
+}

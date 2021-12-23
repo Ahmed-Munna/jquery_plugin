@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fliping Countdown</title>
+    <link rel="stylesheet" href="flipcountdown/jquery.flipcountdown.css">
+    <!-- <link rel="stylesheet" href="fliping/css/flipTimer.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+<!-- 
+    <div class="flipTimer">
+        
+          <div class="days"></div>
+        
+          <div class="hours"></div>
+        
+          <div class="minutes"></div>
+        
+          <div class="seconds"></div>
+    
+        </div> -->
+        
+
+        <div id="retroclockbox1"></div>
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="flipcountdown/jquery.flipcountdown.js"></script>
+    <!-- <script src="fliping/js/jquery.flipTimer.js"></script> -->
+    <script>
+
+$(document).ready(function() {
+// $('.flipTimer').flipTimer({
+ 
+// count up or countdown
+// direction:'down',
+ 
+// // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+// date:'June 20, 2021 08:30:30',
+ 
+// // callback works only with direction = "down"
+// callback:function() { alert('times up!'); }
+ 
+// });
+
+
+
+$(function(){
+	$("#retroclockbox1").flipcountdown({
+		size:"sm"
+	});
+})
+
+
+
+
+
+
+
+
+});
+
+
+    </script>
+</body>
+</html>

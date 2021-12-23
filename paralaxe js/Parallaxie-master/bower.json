@@ -1,0 +1,30 @@
+{
+  "name": "parallaxie",
+  "main": "parallaxie.js",
+  "homepage": "https://github.com/TheUltrasoft/Parallaxie",
+  "authors": [
+    "THE ULTRASOFT <contact@theultrasoft.com>"
+  ],
+  "description": "Easiest, Responsive and Customizable Parallax jQuery Plugin http://theultrasoft.com/projects/parallaxie",
+  "moduleType": [],
+  "keywords": [
+    "parallax",
+    "jquery",
+    "plugin",
+    "html",
+    "html5",
+    "css",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}

@@ -1,0 +1,24 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.tilt{
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+}
+.inner-tilt{
+    transform: translateZ(70px);
+    background-color: #fff;
+}

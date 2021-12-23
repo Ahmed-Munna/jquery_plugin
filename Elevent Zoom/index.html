@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevent Zoom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+<img id="img_01"src="elevatezoom-master/images/large/image1.jpg" data-zoom-image="elevatezoom-master/images/large/image1.jpg"/>
+
+<div id="gal1">
+ 
+  <a href="#" data-image="elevatezoom-master/images/large/image1.jpg" data-zoom-image="elevatezoom-master/images/large/image1.jpg">
+    <img id="img_01" class="car" src="image1.png" />
+  </a>
+
+  <a href="#" data-image="elevatezoom-master/images/large/image2.jpg" data-zoom-image="elevatezoom-master/images/large/image2.jpg">
+    <img id="img_01 car"class="car" src="image2.png" />
+  </a>
+
+  <a href="#" data-image="elevatezoom-master/images/large/image3.jpg" data-zoom-image="elevatezoom-master/images/large/image3.jpg">
+    <img id="img_01 car"class="car" src="image3.png" />
+  </a>
+
+  <a href="#" data-image="elevatezoom-master/images/large/image4.jpg" data-zoom-image="elevatezoom-master/images/large/image4.jpg">
+    <img id="img_01 car" class="car"src="image4.png" />
+  </a>
+
+</div>
+
+
+
+
+
+
+
+
+<script src="elevatezoom-master/jquery-3.6.0.min.js"></script>
+<script src="elevatezoom-master/jquery.elevatezoom.js"></script>
+<script>
+    $(document).ready(function(){
+
+       
+//initiate the plugin and pass the id of the div containing gallery images
+$("#img_01").elevateZoom({
+    gallery:'gal1', 
+    cursor: 'pointer', 
+    galleryActiveClass: 'active', imageCrossfade: true, 
+    scrollZoom:	true,
+    loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'}); 
+
+//pass the images to Fancybox
+$("#img_01").bind("click", function(e) {  
+  var ez =   $('#img_01').data('elevateZoom');	
+	$.fancybox(ez.getGalleryList());
+  return false;
+});
+
+    });
+</script>
+
+</body>
+</html>

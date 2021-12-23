@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Plugin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="progressbar_1">Progressbar 1</div>
+
+    <div id="progressbar_2"></div>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <div id="container"></div>
+
+
+    <script src="progressbar.min.js"></script>
+    <script>
+            // progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Line(progressbar_1, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#089575',
+  trailColor: '#eee',
+  trailWidth: 4,
+  svgStyle: {width: '100%', height: '100%'}
+});
+
+bar.animate(0.7);  // Number from 0.0 to 1.0
+
+
+
+
+
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Line(progressbar_2, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#089575',
+  trailColor: '#eee',
+  trailWidth: 4,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#000',
+      position: 'absolute',
+      right: '25px',
+      top: '3px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(0.9);  // Number from 0.0 to 1.0
+//////////////////////
+var bar = new ProgressBar.Circle(container, {
+  color: '#089575',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 3,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#089575', width: 1 },
+  to: { color: '#089575', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100)+ ' %';
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(0.7);  // Number from 0.0 to 1.0
+
+
+    </script>
+</body>
+</html>

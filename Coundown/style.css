@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: #663399e0;
+}
+
+.single_count {
+    padding: 20px;
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    color: wheat;
+    width: fit-content;
+    font-size: 25px;
+    font-family: arial;
+}
+div#getting-started {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

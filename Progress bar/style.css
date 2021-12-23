@@ -1,0 +1,26 @@
+#progressbar_1 {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+    margin-bottom: 50px;
+  }
+  #progressbar_2 {
+    margin: 20px;
+    width: 500px;
+    height: 20px;
+    position: relative;
+  }
+  svg {
+    border-radius: 5px;
+}
+.progressbar-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }

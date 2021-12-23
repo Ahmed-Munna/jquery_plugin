@@ -1,0 +1,45 @@
+
+section{
+    position: relative;
+}
+.custom-shape-divider-top-1623266576 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1623266576 svg {
+    position: relative;
+    display: block;
+    width: calc(163% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1623266576 .shape-fill {
+    fill: #1C55F8;
+}
+
+
+
+
+
+
+
+
+.demo{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+.random-demo{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    background-color: rgb(172, 17, 102);
+}
